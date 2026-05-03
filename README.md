@@ -4,7 +4,7 @@
     <strong>NTK-style convergence theory for two-layer ReLU networks trained under random multiplicative input noise</strong>
   </p>
   <p align="center">
-    <a href="#paper"><img src="https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg" alt="arXiv"></a>
+    <a href="https://arxiv.org/abs/2602.17423"><img src="https://img.shields.io/badge/arXiv-2602.17423-b31b1b.svg" alt="arXiv"></a>
     <a href="#blog"><img src="https://img.shields.io/badge/Blog-coming%20soon-blue.svg" alt="Blog"></a>
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.9+-3776AB.svg?logo=python&logoColor=white" alt="Python"></a>
     <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-1.13+-EE4C2C.svg?logo=pytorch&logoColor=white" alt="PyTorch"></a>
@@ -168,9 +168,8 @@ multiplicative-gaussian-input-noise/
 **Convergence Analysis of Two-Layer Neural Networks under Gaussian Input Masking**
 Afroditi Kolomvaki · Fangshuo Liao · Evan Dramko · Ziyun Guang · Anastasios Kyrillidis
 *Rice University, Department of Computer Science*
-Under review at TMLR (2026).
 
-The paper PDF and source live in `../paper/main_arxiv.pdf` (local mirror) — public link forthcoming.
+[arXiv:2602.17423](https://arxiv.org/abs/2602.17423) · [PDF](https://arxiv.org/pdf/2602.17423v1) · 2026.
 
 ## <a name="blog"></a>🔗 Blog post
 
@@ -181,10 +180,14 @@ A reader-friendly walkthrough is forthcoming on the AI-OWLS blog:
 
 ```bibtex
 @article{kolomvaki2026multiplicative,
-  title={Convergence Analysis of Two-Layer Neural Networks under {G}aussian Input Masking},
-  author={Kolomvaki, Afroditi and Liao, Fangshuo and Dramko, Evan and Guang, Ziyun and Kyrillidis, Anastasios},
-  journal={Transactions on Machine Learning Research (under review)},
-  year={2026}
+  title         = {Convergence Analysis of Two-Layer Neural Networks under {G}aussian Input Masking},
+  author        = {Kolomvaki, Afroditi and Liao, Fangshuo and Dramko, Evan and Guang, Ziyun and Kyrillidis, Anastasios},
+  journal       = {arXiv preprint arXiv:2602.17423},
+  year          = {2026},
+  eprint        = {2602.17423},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2602.17423}
 }
 ```
 
