@@ -73,11 +73,11 @@ python -m src.smoothed_relu
 |---|---|---|---|---|
 | 01 | `notebooks/01_smoothed_relu.ipynb` | Smoothed ReLU vs Monte Carlo (Fig 1) | <1 min, CPU | none |
 | 02 | `notebooks/02_training_trajectories.ipynb` | Loss trajectories at 7 values of κ (Fig 3) | ~5 min, CPU/GPU | preprocessed CIFAR-10 npz |
-| 03 | `notebooks/03_classifier_accuracy.ipynb` | MLP & CNN accuracy vs κ (Fig 4) | ~30 min, GPU | `classifier.py`, `mlLeaks.py`* |
-| 04 | `notebooks/04_mia_auc_curves.ipynb` | MIA attack AUC vs epochs (Fig 5) | ~1 hr, GPU | `classifier.py`, `mlLeaks.py`* |
-| 05 | `notebooks/05_mia_full_pipeline.ipynb` | Per-κ MIA precision/recall/AUC (Figs 6–7) | ~2 hr, GPU | `classifier.py`, `mlLeaks.py`* |
+| 03 | `notebooks/03_classifier_accuracy.ipynb` | MLP & CNN accuracy vs κ (Fig 4) | ~30 min, GPU | uses `classifier.py`, `deeplearning.py`, `mlLeaks.py` (at repo root) |
+| 04 | `notebooks/04_mia_auc_curves.ipynb` | MIA attack AUC vs epochs (Fig 5) | ~1 hr, GPU | same |
+| 05 | `notebooks/05_mia_full_pipeline.ipynb` | Per-κ MIA precision/recall/AUC (Figs 6–7) | ~2 hr, GPU | same |
 
-\* See [Status](#-status) for the missing modules.
+The MIA notebooks each start with a `sys.path` setup cell so the flat imports `from classifier import ...` / `from mlLeaks import ...` resolve when running locally from `notebooks/`.
 
 ## 📊 Results
 
@@ -159,7 +159,7 @@ multiplicative-gaussian-input-noise/
 
 ## 🛠 Status
 
-- **Notebooks 03 / 04 / 05** depend on two helper modules (`classifier.py`, `mlLeaks.py`) that are not yet in this repository — they live in the authors' working directory and will be added after a code-review pass. Until then, the data-loading and model-definition cells in those notebooks run independently; the cells that `import` from those modules will raise `ModuleNotFoundError`.
+- **Helper modules at the repo root.** Notebooks 03 / 04 / 05 depend on three helper modules — `classifier.py`, `deeplearning.py`, `mlLeaks.py` — which now live at the repository root (extracted from Afroditi's ML-Leaks Colab pipeline). Each MIA notebook starts with a small `sys.path` setup cell so the flat imports resolve when running locally from `notebooks/`.
 - **Cached data** for Notebook 02 expects pre-processed CIFAR-10 splits under `data/CIFAR10/Preprocessed/{targetTrain,targetTest}.npz`. A small preprocessing script will be added.
 - **Figures committed under `figures/`** are the paper's published versions for hero use. Re-running the notebooks/scripts overwrites them with freshly generated copies.
 
