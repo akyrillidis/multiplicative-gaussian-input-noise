@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+.env
+*.egg-info/
+
+# Generated / runtime artifacts (commit only the ones the README references)
+figures/runs/
+results/
+data/
+*.npz
+*.pt
+*.pth
+
+# OS / editor
+.idea/
+.vscode/
