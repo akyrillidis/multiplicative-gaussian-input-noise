@@ -4,7 +4,6 @@
     <strong>NTK-style convergence theory for two-layer ReLU networks trained under random multiplicative input noise</strong>
   </p>
   <p align="center">
-    <a href="#paper"><img src="https://img.shields.io/badge/TMLR-Under%20Review-555.svg" alt="TMLR"></a>
     <a href="#paper"><img src="https://img.shields.io/badge/arXiv-coming%20soon-b31b1b.svg" alt="arXiv"></a>
     <a href="#blog"><img src="https://img.shields.io/badge/Blog-coming%20soon-blue.svg" alt="Blog"></a>
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.9+-3776AB.svg?logo=python&logoColor=white" alt="Python"></a>
